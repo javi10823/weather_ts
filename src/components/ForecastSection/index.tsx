@@ -24,7 +24,7 @@ const ForecastSection = ({
   <Container flex={0.5} justifyContent="center">
     <View style={styles.viewToday}>
       <Container width={'33%'} flexDirection={'row'}>
-        <DropSvg />
+        <ThermometerSvg />
         <Typography fontSize={14} fontWeight={400} color={'#fff'}>
           {getTemperatureInCelsius(weatherData, 'feels_like')}
           °C
@@ -32,7 +32,7 @@ const ForecastSection = ({
       </Container>
 
       <Container width={'33%'} flexDirection={'row'}>
-        <ThermometerSvg />
+        <DropSvg />
         <Typography fontSize={14} fontWeight={400} color={'#fff'}>
           {weatherData?.main?.humidity}%
         </Typography>
