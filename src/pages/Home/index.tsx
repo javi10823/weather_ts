@@ -93,8 +93,8 @@ export const Home = () => {
     if (error)
       Toast.show({
         type: 'error',
-        text1: 'Error',
-        text2: error || 'An unexpected error occurred',
+        text1: 'City not found',
+        text2: 'The requested city was not found.',
       });
   }, [error]);
 
